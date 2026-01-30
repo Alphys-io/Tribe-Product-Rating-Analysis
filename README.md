@@ -44,17 +44,21 @@ This project analyzes product ratings and performance data from **Tribe**, an e-
 ### 3. Data Transformation
 
 #### Category Extraction
-```excel
+excel
 Extracted first text before delimiter (|) in Category column
+
 Applied Find & Replace to standardize formatting
+
 Product Name Standardization
 =TEXTJOIN(" ", TRUE, INDEX(TEXTSPLIT(B2," "), SEQUENCE(3)))
+
 Extracts first 3 words from product names
 =PROPER(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(O2,"|",""),"Æ",""),"¬",""),"!",""),"/",""),"(",""),""",""))
-Removes special characters and applies proper case
+Removes special characters and applies proper 
 Example:
 Before: "SYSKA LED Bulb 9W | Cool Day Light | Pack of 4"
 After: "Syska Led Bulb"
+
 Review Remark Classification
 =IF(G2>=5,"Excellent",IF(G2>=4,"Good",IF(G2>=3,"Average",IF(G2>=2,"Poor","Bad"))))
 Rating Thresholds:
@@ -74,7 +78,7 @@ Category Count Validation
 =COUNTA(UNIQUE(Table1[category]))
 Confirmed 9 unique categories
 ________________________________________
-📈 Key Findings
+###📈 Key Findings
 Overall Performance Metrics
 Metric	Value
 Total Products	1,465
@@ -86,16 +90,19 @@ Review Sentiment Distribution
 •	Average Reviews: 3,242,591 (12% of total)
 •	Poor Reviews: 1,386 (<1%)
 •	Excellent Reviews: 28 (<1%)
-Key Insight: The overwhelming majority of reviews are "Good," indicating general customer satisfaction. However, only 28 "Excellent" reviews suggest significant opportunities for improvement in delivering exceptional experiences.
+
+###Key Insight: The overwhelming majority of reviews are "Good," indicating general customer satisfaction. However, only 28 "Excellent" reviews suggest significant opportunities for improvement in delivering exceptional experiences.
 Category Performance Rankings
 Top Performing Categories (by total ratings):
 1.	🖥️ Electronics - Highest engagement and rating volume
 2.	💻 Computers & Accessories - Strong second place
 3.	🏠 Home & Kitchen - Solid performance
-Lower Engagement Categories:
+4.	
+**Lower Engagement Categories:**
 •	🎸 Musical Instruments
 •	📎 Office Products
-Top-Rated Products
+
+**Top-Rated Products**
 Product	Rating Count	Avg Rating	Category
 Syska LED Bulb	60,000+	4.8	Electronics
 Amazon Basics HDMI	50,000+	5.0	Electronics
@@ -107,38 +114,43 @@ Boult Bass Headphones	<1,000	3.5	Quality concerns, low visibility
 Silicone Yoga Mat	<1,000	3.2	Limited reviews, declining trend
 Common Patterns: Low review volume, average or below ratings, niche categories, generic/unbranded products
 ________________________________________
-📊 Dashboard Preview
+###📊 Dashboard Preview
  
-Dashboard Features
+**Dashboard Features**
 •	Key Metrics Cards: Categories, Products, Average Rating, Total Ratings
 •	Interactive Filters: Review Remark Slicer, Rating Tier Slicer, Category Filter
 •	Visualizations: Category Rating Distribution, Review Sentiment Breakdown, Top & Under-Performing Products
 •	Insights Panels: Performance Rankings, Product-Level Trends, Quality Distribution
 ________________________________________
-💡 Strategic Recommendations
+###💡 Strategic Recommendations
 1. Category Optimization
-Replicate Electronics Success:
+**Replicate Electronics Success:**
 •	Analyze what drives Electronics' high performance (pricing, quality, marketing)
 •	Apply learnings to under-performing categories
 •	Expected Impact: 15-20% engagement increase
-Revitalize Low-Engagement Categories:
+
+**Revitalize Low-Engagement Categories:**
 •	Focus on Musical Instruments and Office Products
 •	Conduct market research and expand product variety
 •	Launch targeted marketing campaigns
 •	Expected Impact: 10-15% category growth within 6 months
-2. Product Portfolio Management
+
+**3. Product Portfolio Management**
 Invest in Winners:
 •	Increase inventory for top performers (Syska, Amazon Basics)
 •	Expected ROI: 25-30% revenue increase
+
 Address Under-Performers:
 •	Rating < 3.0 & Count < 500 → Consider discontinuation
 •	Rating 3.0-3.5 & Count < 1000 → Product improvement plan
 •	Rating 3.5-4.0 & Count < 1000 → Marketing boost
+
 Quality Enhancement Initiative:
 •	Implement stricter supplier QC requirements
 •	Enhance packaging and after-sales service
 •	Target: Increase "Excellent" ratings from 28 to 10,000+ within 12 months
-3. Customer Experience Enhancement
+
+**4. Customer Experience Enhancement**
 Increase Excellent Reviews:
 •	Implement after-sales service improvements
 •	Premium packaging for repeat customers
@@ -149,21 +161,23 @@ Reduce Average Ratings:
 •	No-questions-asked returns
 •	Proactive outreach on delayed orders
 •	Target: -50% Average ratings
-4. Data-Driven Inventory Decisions
+**5. Data-Driven Inventory Decisions**
 Inventory Allocation Framework:
 •	Rating count ≥ 100,000 & Rating ≥ 4.5 → Maintain 90-day stock + buffer
 •	Rating count ≥ 50,000 & Rating ≥ 4.0 → Maintain 60-day stock
 •	Rating count < 500 & Rating < 3.5 → Phase out to clearance levels
 •	Monitor monthly trends for all products
 ________________________________________
-🛠️ Technical Skills Demonstrated
+###🛠️ Technical Skills Demonstrated
+
 •	Data Cleaning & Validation: Removing duplicates, handling null values, standardizing formats
 •	Advanced Excel Functions: TEXTSPLIT, TEXTJOIN, INDEX, SEQUENCE, SUBSTITUTE, nested IF statements, COUNTA, UNIQUE
 •	Data Transformation & Feature Engineering: Creating derived columns, classification logic
 •	Data Visualization & Dashboard Design: Interactive filtering, chart selection, color theory
 •	Statistical Analysis & Business Intelligence: KPI development, trend identification, insight generation
 •	Strategic Recommendation Development: ROI analysis, stakeholder communication
-📫 Contact
+
+###📫 Contact
 Gbenovie Obhoo
 Data Analyst
 📧 Gbenovieobhoo@gmail.com
