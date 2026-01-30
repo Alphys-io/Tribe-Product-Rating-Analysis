@@ -114,8 +114,9 @@ Boult Bass Headphones	<1,000	3.5	Quality concerns, low visibility
 Silicone Yoga Mat	<1,000	3.2	Limited reviews, declining trend
 Common Patterns: Low review volume, average or below ratings, niche categories, generic/unbranded products
 ________________________________________
-###📊 Dashboard Preview
- 
+## 📊 Dashboard Preview
+ <img width="6735" height="3255" alt="Dashboard" src="https://github.com/user-attachments/assets/c6ad8ab2-7fa8-44ca-935e-d45be030bcff" />
+
 **Dashboard Features**
 •	Key Metrics Cards: Categories, Products, Average Rating, Total Ratings
 •	Interactive Filters: Review Remark Slicer, Rating Tier Slicer, Category Filter
@@ -156,11 +157,13 @@ Increase Excellent Reviews:
 •	Premium packaging for repeat customers
 •	Personalized thank-you notes and surprise discounts
 •	Target: +5% Excellent ratings
-Reduce Average Ratings:
+
+**Reduce Average Ratings:**
 •	24-hour response to complaints
 •	No-questions-asked returns
 •	Proactive outreach on delayed orders
 •	Target: -50% Average ratings
+
 **5. Data-Driven Inventory Decisions**
 Inventory Allocation Framework:
 •	Rating count ≥ 100,000 & Rating ≥ 4.5 → Maintain 90-day stock + buffer
@@ -177,7 +180,7 @@ ________________________________________
 •	Statistical Analysis & Business Intelligence: KPI development, trend identification, insight generation
 •	Strategic Recommendation Development: ROI analysis, stakeholder communication
 
-###📫 Contact
+## 📫 Contact
 Gbenovie Obhoo
 Data Analyst
 📧 Gbenovieobhoo@gmail.com
